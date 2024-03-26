@@ -1,0 +1,76 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "onurumu6 hazır scriptler",
+   LoadingTitle = "Onur Hazır Scriptler",
+   LoadingSubtitle = "by onurumu6",
+   ConfigurationSaving = {
+      Enabled = true,
+
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "discord.gg/8GEMYScA", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Key System",
+      Subtitle = "Key System",
+      Note = "Keyi Yaz",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {""} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local Tab = Window:CreateTab("Hoho Hub", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Hoho Hub")
+local Button = Tab:CreateButton({
+   Name = "Hoho Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+   end,
+})
+local Tab = Window:CreateTab("Blox Fruit Her Script", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Blox Fruit all scripts.")
+local Button = Tab:CreateButton({
+   Name = "W-azure",
+   Callback = function()
+      getgenv().Team = "Pirates"
+      getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+      getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+      getgenv().ForceUseSilentAim = false --Force turn on silent aim , if error then executor problem
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Dakimi Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/DakiiHub/dakiihub/main/main.lua", true))()  
+   end,
+})
+local Tab = Window:CreateTab("Infinite Yield", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Infinite Yield.")
+Rayfield:Notify({
+   Title = "Butona Bastın",
+   Content = "Hile Çalıştı",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Tamam!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+local Button = Tab:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()      		
+   end,
+})
+
